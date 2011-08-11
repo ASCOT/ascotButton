@@ -67,7 +67,7 @@ button.shuttle:hover{
 .clickedButtonState{
   background: white;
   margin-left: 1px;
-  height: 21px;
+  height: 19px;
   width: 33px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -77,43 +77,30 @@ button.shuttle:hover{
 
 /* set up the three bar spinners */
 .clickedButtonState .spinner {
-  position:relative;
-  width:20px;
-  height:20px;
-  margin: auto;
+  position: relative;
+  top: -40px;
+  left: -34px;
+  width: 100px;
+  height: 100px;
   -webkit-animation-name: rotateThis;
-  -webkit-animation-duration:2s;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-timing-function:linear;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
 
 .spinner div {
-  width:3px;
-  height:5px;
-  background: #6d6675;
-  position:absolute;
-  top:8px;
-  left:9px;
+  width: 8px;
+  height: 30px;
+  background: #a2a8b1;
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  opacity: 1;
 }
 
-
 @-webkit-keyframes rotateThis {
-0% {-webkit-transform: rotate(0deg);}
-12.5% {-webkit-transform: rotate(0deg);}
-12.51% {-webkit-transform: rotate(45deg);}
-25% {-webkit-transform: rotate(45deg);}
-25.01% {-webkit-transform: rotate(90deg);}
-37.5% {-webkit-transform: rotate(90deg);}
-37.51% {-webkit-transform: rotate(135deg);}
-50% {-webkit-transform: rotate(135deg);}
-50.01% {-webkit-transform: rotate(180deg);}
-62.5% {-webkit-transform: rotate(180deg);}
-62.51% {-webkit-transform: rotate(225deg);}
-75% {-webkit-transform: rotate(225deg);}
-75.01% {-webkit-transform: rotate(270deg);}
-87.5% {-webkit-transform: rotate(270deg);}
-87.51% {-webkit-transform: rotate(315deg);}
-100% {-webkit-transform: rotate(315deg);}
+  from {-webkit-transform: scale(0.4) rotate(0deg);}
+  to {-webkit-transform: scale(0.4) rotate(360deg);}
 }
 
 
